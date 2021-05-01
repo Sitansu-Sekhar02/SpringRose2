@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context="com.afkharpro.springrose.MenuActivities.MazayaActivity">
+
+
+
+
+
+<RelativeLayout
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mlogolin"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mlogo"
+            android:gravity="center"
+            android:background="@drawable/mazaya"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+
+
+
+    <com.afkharpro.springrose.Base.FlatRegular
+        android:layout_below="@+id/mlogolin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/colorAccent"
+        android:text="ادخل رقم عضويتك في مزايا" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+
+            android:id="@+id/memberID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint=" رقم العضوية" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_above="@+id/link"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.afkharpro.springrose.Base.FlatRegular
+android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:textColor="#000000"
+            android:text=" لمعلومات إضافية" />
+
+        <com.afkharpro.springrose.Base.FlatRegular
+            android:id="@+id/visit"
+            android:layout_weight="1.1"
+            android:gravity="center|right"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="قم بزيارتنا" />
+
+
+    </LinearLayout>
+
+
+
+
+    <com.afkharpro.springrose.Base.FlatRegularBtn
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:text="اربط الآن" />
+
+
+
+</RelativeLayout>

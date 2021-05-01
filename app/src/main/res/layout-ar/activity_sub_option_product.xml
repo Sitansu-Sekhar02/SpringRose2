@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.afkharpro.springrose.SubOptionProductActivity">
+
+
+    <com.afkharpro.springrose.Base.FlatRegularBtn
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green"
+        android:text="Skip"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addtocart"
+        android:gravity="center">
+
+
+        <LinearLayout
+
+            android:id="@id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="اختر بالون"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <org.lucasr.twowayview.TwoWayView
+
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/lvItems"
+                    style="@style/TwoWayView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center"
+                    android:listSelector="@drawable/selector" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin2"
+
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="اختر الشوكولاته"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <org.lucasr.twowayview.TwoWayView
+
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/lvItems2"
+                    style="@style/TwoWayView"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center"
+                    android:listSelector="@drawable/selector" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.afkharpro.springrose.Base.FlatRegularBtn
+        android:id="@+id/addtocart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/green"
+        android:text="استمر"
+
+        android:textColor="#ffffff" />
+
+
+    <ProgressBar
+
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

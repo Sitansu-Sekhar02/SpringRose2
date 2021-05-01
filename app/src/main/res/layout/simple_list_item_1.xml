@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+
+    >
+
+    <RelativeLayout
+        android:background="@drawable/imgborder"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+
+            android:id="@+id/imageView2"
+            android:layout_width="145dp"
+            android:layout_height="200dp"
+
+            />
+
+        <RelativeLayout
+
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:visibility="gone"
+                android:background="@drawable/ribbon_en"
+
+
+
+                android:id="@+id/ribbon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:layout_margin="1dp"
+                android:id="@+id/discountprice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end"
+
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@+id/imageView2"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:padding="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_below="@+id/top"
+
+            android:layout_width="145dp"
+            android:layout_height="wrap_content">
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:layout_margin="1dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primegrey"
+                android:id="@+id/coderef"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:layout_margin="1dp"
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:layout_margin="1dp"
+                android:id="@+id/oriprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

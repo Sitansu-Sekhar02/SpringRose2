@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp">
+
+        <LinearLayout
+
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <com.afkharpro.springrose.Base.Tahoma
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <com.afkharpro.springrose.Base.FlatRegularBtn
+            android:id="@+id/seebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/viewmorebtn"
+            android:textColor="@color/primegrey"
+            android:text="الكل" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:layout_marginBottom="10dp">
+
+        <org.lucasr.twowayview.TwoWayView
+
+
+            android:id="@+id/lvItem"
+            style="@style/TwoWayView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+</RelativeLayout>

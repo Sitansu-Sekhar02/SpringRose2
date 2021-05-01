@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.afkharpro.springrose.SubProductActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/addtocart"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="3">
+
+
+        <!--<CheckBox-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/morn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="10sp"-->
+        <!--android:text="@string/Morning" />-->
+        <!--<CheckBox-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/after"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="10sp"-->
+        <!--android:text="@string/Afternoon" />-->
+        <!--<CheckBox-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/even"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textSize="10sp"-->
+        <!--android:text="@string/Evening" />-->
+
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/mspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#757575"
+            android:popupBackground="@color/colorAccent"
+            app:ms_alignLabels="false"
+            app:ms_arrowColor="@color/colorAccent"
+            app:ms_arrowSize="16dp"
+            app:ms_baseColor="@color/colorAccent"
+
+            app:ms_enableFloatingLabel="false"
+            app:ms_floatingLabelColor="@color/colorAccent"
+
+
+            app:ms_floatingLabelText="City"
+
+
+            app:ms_multiline="false"
+            app:ms_thickness="0.5dp" />
+    </LinearLayout>
+
+    <com.afkharpro.springrose.Base.FlatRegularBtn
+        android:id="@+id/addtocart"
+        android:textColor="#ffffff"
+        android:text="أضف الى السلة"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <DatePicker
+        android:id="@+id/datePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="436dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:padding="16dp" />
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.afkharpro.springrose.Base.FlatRegular
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/selecttimetext"
+        android:textColor="@color/darkpink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:text="اختر وقت التوصيل المناسب لك" />
+
+
+</RelativeLayout>

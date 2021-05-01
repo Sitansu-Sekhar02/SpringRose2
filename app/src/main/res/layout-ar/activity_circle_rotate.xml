@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+    tools:context="com.afkharpro.springrose.Fragments.CircleRotateActivity">
+
+    <com.lukedeighton.wheelview.WheelView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:wheelDrawable="@mipmap/wheelar"
+        app:rotatableWheelDrawable="true"
+        app:selectionAngle="60.0"
+        app:wheelPosition="bottom"
+        app:wheelOffsetY="100dp"
+        app:repeatItems="true"
+        app:wheelRadius="280dp"
+        app:wheelItemCount="6"
+        app:wheelPadding="5dp"
+
+        app:wheelItemRadius="10dp"/>
+
+</RelativeLayout>

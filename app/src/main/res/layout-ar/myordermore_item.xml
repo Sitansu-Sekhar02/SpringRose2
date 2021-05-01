@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/shadow_round">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/productpic"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="3" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/productcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical|right"
+                    android:text="Product code:"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/del"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#464646"
+                    android:gravity="center_vertical"
+                    android:text="Delivery on "
+                    android:textStyle="bold" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lintime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:textColor="#464646"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#464646"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_gravity="left"
+
+                    android:text="@string/FreeDelivery" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linmsg"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#464646"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/choc"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/choctext"
+                    android:layout_width="match_parent"
+                    android:textColor="#464646"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text=" " />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ball"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/balltext"
+                    android:layout_width="match_parent"
+                    android:textColor="#464646"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text=" " />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="Sar 240"
+                    android:textColor="@color/colorAccent"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

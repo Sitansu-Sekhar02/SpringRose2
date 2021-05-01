@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_round"
+
+
+
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="3" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/coderef"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:text="Product code:"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/stock"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:text="Delivery on "
+                    android:textStyle="bold" />
+
+
+
+                <com.afkharpro.springrose.Base.FlatRegular
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="Sar 240"
+                    android:textColor="@color/colorAccent"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="-20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="center|end"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.afkharpro.springrose.Base.FlatRegularBtn
+            android:id="@+id/remove"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="31dp"
+            android:background="@drawable/close"
+
+
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

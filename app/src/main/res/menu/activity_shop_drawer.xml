@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:checked="true"
+            android:icon="@drawable/home"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/guest"
+
+            android:title="@string/Account" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/myorder"
+            android:title="@string/MyOrders" />
+
+        <item
+            android:id="@+id/nav_orderstatus"
+            android:icon="@drawable/statusorder"
+            android:title="@string/nav_orderStatus" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/wish"
+            android:title="@string/YourWishlist" />
+
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/lang"
+            android:title="@string/Language" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_send"
+            android:icon="@drawable/notification"
+            android:title="@string/Notifications" />
+        <item
+            android:id="@+id/nav_sends"
+            android:icon="@drawable/currency"
+            android:title="@string/Currency" />
+        <item
+            android:id="@+id/nav_shareapp"
+            android:icon="@drawable/sharer"
+            android:title="@string/Share" />
+        <item
+            android:id="@+id/nav_rateapp"
+            android:icon="@drawable/rateus"
+            android:title="@string/RateUs" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/sur"
+            android:title="@string/Terms" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/bcase"
+            android:title="@string/ContactUs" />
+
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/livechat"
+            android:title="@string/livechat" />
+
+
+
+
+    </group>
+</menu>

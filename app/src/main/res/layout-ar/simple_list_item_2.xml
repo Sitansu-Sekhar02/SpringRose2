@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shadow_round"
+    android:padding="16dp"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <com.afkharpro.springrose.Base.FlatRegular
+        android:background="#ffffff"
+        android:id="@+id/description"
+        android:textColor="@color/colorAccent"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_height="130dp" />
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:weightSum="3"
+        android:id="@+id/pink"
+        android:layout_below="@+id/description"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <com.afkharpro.springrose.Base.FlatLight
+
+            android:id="@+id/length"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.afkharpro.springrose.Base.FlatLight
+
+            android:id="@+id/width"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <com.afkharpro.springrose.Base.FlatLight
+
+            android:id="@+id/height"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:background="#ffffff"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+
+
+
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+
+         />
+    <LinearLayout
+        android:padding="3dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_below="@+id/imageView2"
+        android:background="#8b5aac"
+        android:layout_width="120dp"
+        android:layout_height="30dp">
+
+        <com.afkharpro.springrose.Base.FlatRegular
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#ffffff"
+            android:id="@+id/price"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.afkharpro.springrose.Base.FlatRegular
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:id="@+id/coderef"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

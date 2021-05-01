@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+
+
+    <entry>
+        <key>features_order</key>
+        <value>test,string</value>
+    </entry>
+
+
+    <entry>
+        <key>love_and_romance</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>most_rated</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>new_products</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>new_born</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>share_message_en</key>
+        <value>This is the share message english</value>
+    </entry>
+
+    <entry>
+        <key>share_message_ar</key>
+        <value>This is the share message arabic</value>
+    </entry>
+
+
+
+    <entry>
+        <key>artificial_flowers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>long_life_flowers</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>hand_bouquet</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>arrangments</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>motherday</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>graduation</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>birthday</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>eid</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>corporate</key>
+        <value>false</value>
+    </entry>
+
+
+    <entry>
+        <key>mix_occasions</key>
+        <value>false</value>
+    </entry>
+
+
+    <entry>
+        <key>specialities</key>
+        <value>false</value>
+    </entry>
+
+
+    <entry>
+        <key>best_sellers</key>
+        <value>true</value>
+    </entry>
+
+
+    <entry>
+        <key>product_share_message_en</key>
+        <value>This is the share message english</value>
+    </entry>
+
+    <entry>
+        <key>product_share_message_ar</key>
+        <value>This is the share message arabic</value>
+    </entry>
+
+    <entry>
+        <key>coupon_discount</key>
+        <value>null</value>
+    </entry>
+    <entry>
+        <key>coupon_discount2</key>
+        <value>null</value>
+    </entry>
+
+    <entry>
+        <key>survey_link</key>
+        <value>https://goo.gl/forms/xnBgqHciUti5q0fn2</value>
+    </entry>
+
+
+
+</defaultsMap>

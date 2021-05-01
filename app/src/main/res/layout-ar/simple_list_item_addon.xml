@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+
+    <ImageView
+        android:background="@drawable/imgborder"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+
+        android:id="@+id/imageView2"
+        android:layout_width="117dp"
+        android:layout_height="130dp"
+
+         />
+    <LinearLayout
+        android:id="@+id/lin1"
+
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:weightSum="1"
+        android:layout_below="@+id/imageView2"
+        android:background="@color/colorAccent"
+        android:layout_width="120dp"
+        android:layout_height="20dp">
+
+        <com.afkharpro.springrose.Base.FlatRegular
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#ffffff"
+            android:id="@+id/price"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:weightSum="1"
+        android:layout_below="@+id/lin1"
+        android:background="@color/colorAccent"
+        android:layout_width="120dp"
+        android:layout_height="20dp">
+
+        <com.afkharpro.springrose.Base.FlatRegular
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#ffffff"
+            android:id="@+id/name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

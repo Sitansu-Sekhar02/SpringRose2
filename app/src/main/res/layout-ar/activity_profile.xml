@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.afkharpro.springrose.MenuActivities.ProfileActivity">
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lin1"
+
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="الاسم" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="الإسم الأخير" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin2"
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/lin3"
+        android:layout_below="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/tele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رقم الجوال"
+                android:maxLength="10"
+                android:ems="10"
+                android:inputType="phone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+
+        android:layout_below="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.afkharpro.springrose.Base.FlatRegular
+            android:text="Eg: 05xxxxxxxx"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            android:textColor="@color/darkgrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:layout_below="@+id/lin3"
+        android:layout_above="@+id/update"
+        android:layout_width="match_parent"
+
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/inlin1"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:id="@+id/pass"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seeallbtn"
+                android:textColor="#000000"
+                android:text="تغير كلمة المرور ؟" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_below="@+id/inlin1"
+            android:id="@+id/inlin2"
+            android:background="#fafafa"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:id="@+id/add"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seeallbtn"
+                android:textColor="#000000"
+                android:text="إدارة العناوين" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_below="@+id/inlin2"
+            android:id="@+id/inlin3"
+            android:background="#fafafa"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:id="@+id/mazaya"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seeallbtn"
+                android:textColor="#000000"
+                android:text="برنامج مزايا للولاء" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <com.afkharpro.springrose.Base.FlatRegularBtn
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:text="تحديث" />
+
+</RelativeLayout>

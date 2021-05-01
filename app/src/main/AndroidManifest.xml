@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.afkharpro.springrose">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <permission android:name="android.permission.CALL_PHONE" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_example.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.afkharpro.springrose" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity android:name=".DetailsActivity" />
+        <activity
+            android:name=".ShopActivity"
+            android:label="@string/title_activity_shop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.afkharpro.springrose.MainActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".SearchResultsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings.CurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeeAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubOptionProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUps.ImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".MenuActivities.WishListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings.NotiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.SetAddressesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.SetMethodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.GuestFlowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.GuestRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUps.AddShippingAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".OrderFlow.OrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.FinalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUps.CouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderFlow.PayFortActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.MyOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.MyOrdersMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivities.ManageAddressesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopUps.DeliveryAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.CircleRotateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuActivities.MazayaActivity" />
+        <activity android:name=".MenuActivities.LiveChatActivity" />
+        <activity android:name=".MenuActivities.OrderStatusActivity"></activity>
+    </application>
+
+</manifest>

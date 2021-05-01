@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="5"
+        android:background="@drawable/listselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.afkharpro.springrose.Base.FlatMedium
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:textColor="@color/colorAccent" />
+
+
+        <com.afkharpro.springrose.Base.FlatRegular
+
+            android:layout_below="@+id/text1"
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorAccent" />
+
+        <com.afkharpro.springrose.Base.FlatRegular
+
+            android:layout_below="@+id/text2"
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorAccent" />
+
+        <com.afkharpro.springrose.Base.FlatRegular
+            android:layout_below="@+id/text3"
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/approved"
+            android:background="@drawable/approved"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/text1"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+

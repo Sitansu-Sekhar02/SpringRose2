@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_wish"
+        android:icon="@drawable/wish"
+        app:showAsAction="always|collapseActionView"
+        android:title="wishlist"/>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/sharer"
+        app:showAsAction="always|collapseActionView"
+        android:title="Share"/>
+
+</menu>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Arrangements"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seearrange"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1"
+            android:layout_marginBottom="10dp"
+           >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemsarrange"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel2"
+            android:id="@+id/rel3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top2"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/HandBouquet"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seehand"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel3"
+            android:layout_marginBottom="10dp"
+            >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemshand"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel4"
+            android:id="@+id/rel5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top3"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/LongLifeFlowers"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seelong"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rel6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel5"
+            android:layout_marginBottom="10dp"
+            >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemslong"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel6"
+            android:id="@+id/rel7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top4"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Artifical"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seeart"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel7"
+            android:layout_marginBottom="10dp"
+            >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemsart"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel8"
+            android:id="@+id/rel9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top5"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Specialities"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seespecial"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel9"
+            android:layout_marginBottom="10dp"
+            >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemsspecial"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rel10"
+            android:id="@+id/rel11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/top6"
+                android:background="@color/primegrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.afkharpro.springrose.Base.FlatRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/MixOccasions"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.afkharpro.springrose.Base.FlatRegularBtn
+                android:id="@+id/seemix"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/viewmorebtn"
+                android:textColor="@color/primegrey"
+                android:text="الكل" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rel12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel11"
+            android:layout_marginBottom="10dp"
+            >
+
+            <org.lucasr.twowayview.TwoWayView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/lvItemsmix"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
